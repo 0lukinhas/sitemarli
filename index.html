@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Marli Rosignol - Biomédica Esteta | Clínica de Estética Avançada Itatiba</title>
+    <meta name="description"
+        content="Clínica de estética avançada em Itatiba. Especialista em Biomedicina Estética, tratamentos faciais, corporais, botox, lavieen e tecnologias de ponta.">
+    <meta name="keywords"
+        content="clínica de estética Itatiba, Dra Marli Rosignol, botox, lavieen, biomedicina estética, tratamentos faciais, harmonização, estética avançada">
+    <meta name="author" content="Dra. Marli Rosignol">
+    <meta property="og:title" content="Dra. Marli Rosignol | Estética Avançada Itatiba">
+    <meta property="og:description"
+        content="Revele sua beleza autêntica com tratamentos pro-age e tecnologias exclusivas em Itatiba.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="LOGO MARLI SEM FUNDO.png">
+    <link rel="apple-touch-icon" href="LOGO MARLI SEM FUNDO.png">
+
+    <!-- Google Fonts (inspired by faceformula.com pairing) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#sobre">Dra. Marli</a>
+            <a href="#tratamentos">Procedimentos</a>
+            <a href="#vip">Grupo VIP</a>
+            <a href="#mentorias">Mentorias</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <a href="#inicio" class="nav-brand" aria-label="Dra. Marli Rosignol - Início">
+            <img src="LOGO MARLI SEM FUNDO.png" alt="Logo Dra. Marli Rosignol" class="nav-logo">
+        </a>
+        <div class="nav-action">
+            <a href="https://wa.me/5511978855730" class="btn-outline">Agendar Avaliação</a>
+            <button class="menu-toggle" aria-label="Abrir menu">Menu</button>
+        </div>
+    </nav>
+
+    <!-- Menu Mobile Integrado -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <button class="close-menu" id="closeMenu" aria-label="Fechar menu">&times;</button>
+        <div class="mobile-nav-links">
+            <a href="#sobre" class="mobile-link">Dra. Marli</a>
+            <a href="#tratamentos" class="mobile-link">Procedimentos</a>
+            <a href="#vip" class="mobile-link">Grupo VIP</a>
+            <a href="#mentorias" class="mobile-link">Mentorias</a>
+            <a href="#contato" class="mobile-link">Contato</a>
+            <a href="https://wa.me/5511978855730" class="btn-solid">Agendar Avaliação</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-content">
+                <div class="hero-text-large">
+                    <h1>MARLI<span>——</span>ROSIGNOL</h1>
+                </div>
+                <div class="hero-subtitle">
+                    <h2>Estética Avançada <br>de Nova Geração</h2>
+                    <p>Revelando sua beleza autêntica através de ciência, tecnologia e protocolos exclusivos em Itatiba.
+                    </p>
+                    <a href="#sobre" class="link-arrow">Conheça a Dra. Marli <svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Split Image / Text -->
+        <section class="science-section" id="sobre">
+            <div class="science-container">
+                <div class="science-text">
+                    <h2>Ciência, Biologia e <br>Excelência Estética.</h2>
+                    <p><strong>Dra. Marli Rosignol</strong> é referência em Biomedicina Estética. Especialista desde
+                        2013, com imersões internacionais na Suíça e Itália, seu foco é revelar a autoconfiança de cada
+                        paciente por meio de uma saúde integrativa e envelhecimento com qualidade. Com uma visão
+                        <i>pro-age</i> e tecnologias de ponta, oferece resultados naturais, elegantes e duradouros.
+                    </p>
+                    <a href="#tratamentos" class="link-arrow">Ver procedimentos detalhados <svg viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg></a>
+                </div>
+                <div class="science-image">
+                    <img src="https://accurate-clone-engine.lovable.app/assets/doctor-original-FLNzisTh.jpg"
+                        alt="Dra. Marli Rosignol em Atendimento">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Treatments Grid (mimicking products) -->
+        <section class="treatments-section" id="tratamentos">
+            <div class="treatments-header" style="max-width: 600px;">
+                <h2>Tratamentos Oferecidos</h2>
+                <p>Nossos tratamentos avançados unem tecnologia de ponta à resposta natural do seu corpo.</p>
+            </div>
+
+            <div class="treatments-card-grid">
+                <!-- Card 1 -->
+                <div class="t-card">
+                    <div class="t-image">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600"
+                            alt="Lavieen Laser">
+                    </div>
+                    <div class="t-content">
+                        <h3>Laser Lavieen</h3>
+                        <p>Tecnologia avançada para rejuvenescimento global, redução de poros e o famoso "Efeito BB
+                            Glow".</p>
+                        <div class="t-areas">
+                            <span>Rosto</span>
+                            <span>Pescoço</span>
+                            <span>Colo</span>
+                        </div>
+                        <a href="https://wa.me/5511978855730" class="t-link">Saiba Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="t-card">
+                    <div class="t-image">
+                        <img src="https://accurate-clone-engine.lovable.app/assets/treatment-facial-CLMzMFmm.jpg"
+                            alt="Botox e Preenchimentos">
+                    </div>
+                    <div class="t-content">
+                        <h3>Toxina Botulínica (Botox)</h3>
+                        <p>Prevenção e suavização das linhas de expressão garantindo um visual descansado, natural e
+                            elegante.</p>
+                        <div class="t-areas">
+                            <span>Testa</span>
+                            <span>Glabela</span>
+                            <span>Olhar</span>
+                        </div>
+                        <a href="https://wa.me/5511978855730" class="t-link">Saiba Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="t-card">
+                    <div class="t-image">
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600"
+                            alt="Preenchimento com Ácido Hialurônico">
+                    </div>
+                    <div class="t-content">
+                        <h3>Preenchimento com Ácido Hialurônico</h3>
+                        <p>Volumização e reestruturação facial, devolvendo a jovialidade de forma proporcional e
+                            sofisticada.</p>
+                        <div class="t-areas">
+                            <span>Malar</span>
+                            <span>Lábios</span>
+                            <span>Olheiras</span>
+                        </div>
+                        <a href="https://wa.me/5511978855730" class="t-link">Saiba Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="t-card">
+                    <div class="t-image">
+                        <img src="https://accurate-clone-engine.lovable.app/assets/gallery-1-C-nZATR0.jpg"
+                            alt="Bioestimuladores de colágeno">
+                    </div>
+                    <div class="t-content">
+                        <h3>Bioestimuladores de Colágeno</h3>
+                        <p>Tratamentos potentes para eliminação da flacidez corporal e facial, melhorando a firmeza
+                            estrutural da pele.</p>
+                        <div class="t-areas">
+                            <span>Rosto</span>
+                            <span>Glúteos</span>
+                            <span>Abdômen</span>
+                        </div>
+                        <a href="https://wa.me/5511978855730" class="t-link">Saiba Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="t-card">
+                    <div class="t-image">
+                        <img src="https://accurate-clone-engine.lovable.app/assets/ultrasound-hipro-jurGtZY2.jpg"
+                            alt="Ultrassom HIPRO">
+                    </div>
+                    <div class="t-content">
+                        <h3>Ultrassom Macro e Microfocado HIPRO</h3>
+                        <p>Lifting não cirúrgico e destruição de gordura localizada com tecnologia de altíssima
+                            precisão.</p>
+                        <div class="t-areas">
+                            <span>Rosto</span>
+                            <span>Papada</span>
+                            <span>Corpo</span>
+                        </div>
+                        <a href="https://wa.me/5511978855730" class="t-link">Saiba Mais &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="treatments-more-list" style="margin-top: 5rem; text-align: center;">
+                <h3
+                    style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-primary-dark); font-style: italic; margin-bottom: 3rem;">
+                    E muito mais...</h3>
+                <ul class="treatment-list"
+                    style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem 2rem; text-align: left;">
+                    <li><strong>Fios de PDO</strong></li>
+                    <li><strong>Laser Etherea</strong></li>
+                    <li><strong>Microagulhamento & Skinbooster</strong></li>
+                    <li><strong>Limpeza de Pele & Peelings</strong></li>
+                    <li><strong>Lipo de Papada</strong></li>
+                    <li><strong>Glúteo Max</strong></li>
+                    <li><strong>Supramáximus</strong></li>
+                    <li><strong>Criolipólise</strong></li>
+                    <li><strong>Enzimas & Emagrecimento</strong></li>
+                    <li><strong>Radiofrequência</strong></li>
+                    <li><strong>Ozonioterapia</strong></li>
+                </ul>
+                <div style="margin-top: 4rem;">
+                    <a href="https://wa.me/5511978855730" class="btn-solid" target="_blank">Agendar minha Avaliação</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Typographic Overlay -->
+        <section class="overlay-section">
+            <div class="overlay-bg">
+                <img src="https://accurate-clone-engine.lovable.app/assets/ultrasound-hipro-jurGtZY2.jpg"
+                    alt="Detalhes da pele">
+            </div>
+            <div class="overlay-content">
+                <p class="overlay-subtitle">Simplicidade encontra Sofisticação & Alta Tecnologia.</p>
+                <!-- semantic heading fix -->
+                <h2>(Essencial) <br>Natural, <br>Pro Age, <br>Elegante</h2>
+                <div class="overlay-bottom">
+                    <p>Rejuvenescimento sem exageros. Diferenciais de nossa clínica são moldados pelos seus objetivos,
+                        não pela idade.</p>
+                    <a href="#tratamentos" class="btn-solid">Conheça nossos protocolos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais Section -->
+        <section class="differentials-section" id="diferenciais">
+            <div class="differentials-header">
+                <h2>Nossos Diferenciais.</h2>
+            </div>
+
+            <div class="differentials-grid">
+                <div class="diff-card">
+                    <div class="diff-num">01</div>
+                    <h3>+8 Anos de Experiência</h3>
+                    <p>Experiência clínica comprovada em estética avançada e integrativa.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-num">02</div>
+                    <h3>Alta Tecnologia</h3>
+                    <p>A única clínica de Itatiba e região com equipamentos atuais e de altíssima qualidade.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-num">03</div>
+                    <h3>Cursos e Imersões</h3>
+                    <p>Formação contínua internacional, com mais de 10 cursos em estética avançada e anatomia.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-num">04</div>
+                    <h3>Atendimento Único</h3>
+                    <p>Serviço de alta excelência, desenhado cuidadosamente para o seu conforto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="depoimentos">
+            <div class="carousel-header-with-nav">
+                <div class="testimonials-header" style="margin-bottom: 0;">
+                    <h2>O que dizem nossas pacientes</h2>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev-btn" id="test-prev" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next-btn" id="test-next" aria-label="Próximo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="testimonials-carousel" id="test-carousel">
+                    <div class="testimonial-card" style="text-align: center;">
+                        <div class="stars">★★★★★</div>
+                        <p>"Dra Marli é fantástica! Extremamente atenciosa, cuidadosa e humana! A clínica é linda, super
+                            aconchegante! Os tratamentos que a Dra faz são de extrema qualidade e com alta tecnologia!"
+                        </p>
+                        <h4>ALINE MOLINA</h4>
+                    </div>
+                    <div class="testimonial-card" style="text-align: center;">
+                        <div class="stars">★★★★★</div>
+                        <p>"Depois dos 30 e alguns, notei a mudança na minha aparência. Busquei orientação para
+                            envelhecer
+                            com qualidade e hoje sigo muito confiante. Preenchimento na medida certa, muito
+                            profissionalismo..."</p>
+                        <h4>LÚCIA SOARES</h4>
+                    </div>
+                    <div class="testimonial-card" style="text-align: center;">
+                        <div class="stars">★★★★★</div>
+                        <p>"Excelente profissional. Clínica maravilhosa. Os procedimentos são executados com
+                            profissionalismo e eficiência. Super recomendo a todos!"</p>
+                        <h4>KARINA SABELO</h4>
+                    </div>
+                    <div class="testimonial-card" style="text-align: center;">
+                        <div class="stars">★★★★★</div>
+                        <p>"Experiência incrível, atendimento humanizado e os resultados do Laser foram além da minha
+                            expectativa! A clínica tem um perfume e ambiente únicos."</p>
+                        <h4>Camila Bertoni</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria de Fotos / Experience Section -->
+        <section class="experience-section" id="galeria">
+            <div class="carousel-header-with-nav">
+                <div class="gallery-header" style="margin-bottom: 0;">
+                    <h2>Galeria da Clínica</h2>
+                    <p>Arraste para o lado ou use as setas</p>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev-btn" id="gal-prev" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next-btn" id="gal-next" aria-label="Próximo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="gallery-carousel" id="gal-carousel">
+                    <div class="gallery-card">
+                        <img src="https://accurate-clone-engine.lovable.app/assets/gallery-1-C-nZATR0.jpg"
+                            alt="Atendimento Humanizado">
+                    </div>
+                    <div class="gallery-card">
+                        <img src="https://accurate-clone-engine.lovable.app/assets/gallery-2-D4ex5dzs.jpg"
+                            alt="Protocolos Exclusivos">
+                    </div>
+                    <div class="gallery-card">
+                        <img src="https://accurate-clone-engine.lovable.app/assets/clinic-original-DmjUfR-o.jpg"
+                            alt="Tecnologia Estética">
+                    </div>
+                    <div class="gallery-card">
+                        <img src="https://accurate-clone-engine.lovable.app/assets/hero-original-CRiCJGob.jpg"
+                            alt="Procedimentos de Excelência">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Final CTA -->
+        <section class="cta-section" id="contato">
+            <div class="cta-bg">
+                <img src="https://accurate-clone-engine.lovable.app/assets/clinic-original-DmjUfR-o.jpg"
+                    alt="Tecnologia Estética">
+            </div>
+            <div class="cta-content">
+                <p class="cta-eyebrow">CONTATO</p>
+                <h2>Sua pele muda. Nós estamos<br>aqui para ajudá-la a entender.</h2>
+                <a href="https://wa.me/5511978855730" class="btn-solid-white">Agendar Consulta</a>
+            </div>
+        </section>
+
+
+        <!-- Section: Map -->
+        <section class="map-section">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.3970868848417!2d-46.85045432578508!3d-23.003185341624003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c14dabb364e723%3A0xc47e34f8a3d6eb2e!2sR.%20Benjamin%20Constant%2C%20501%20-%20Sala%2065%20-%20Centro%2C%20Itatiba%20-%20SP%2C%2013250-340!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Clínica</h4>
+                <a href="#sobre">A Dra. Marli</a>
+                <a href="#tratamentos">Procedimentos</a>
+                <a href="#mentorias">Mentorias</a>
+                <a href="#vip">Grupo VIP</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="https://wa.me/5511978855730">(11) 97885-5730</a>
+                <a href="#">contato@marlirosignol.com.br</a>
+            </div>
+            <div class="footer-col">
+                <h4>Endereço</h4>
+                <p>Office Center<br>Rua Benjamin Constant, 501<br>Sala 65, Centro<br>Itatiba - SP</p>
+            </div>
+            <div class="footer-col">
+                <h4>Horários</h4>
+                <p>Seg a Sex: 09h às 18h<br>Sáb: 09h às 16h</p>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <a href="https://www.instagram.com/dramarlirosignol/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=61558166832974" target="_blank">Facebook</a>
+                <a href="https://wa.me/5511978855730" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-brand">
+                <h2>MARLI<span>——</span>ROSIGNOL</h2>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2026 Dra. Marli Rosignol. Biomédica Esteta.</p>
+                <div class="legal-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <a href="https://chat.whatsapp.com/KwimP4xDtw395QIJT43Uxz" target="_blank" class="floating-vip"
+        aria-label="Grupo VIP WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12.012 2C6.495 2 2.016 6.479 2.016 11.996c0 1.761.463 3.486 1.344 5.006L2 22l5.122-1.343a9.945 9.945 0 004.89 1.282h.004c5.516 0 9.998-4.481 9.998-9.999 0-2.677-1.042-5.195-2.935-7.087A9.944 9.944 0 0012.012 2zm5.798 14.128c-.244.685-1.424 1.346-1.956 1.44-.482.085-1.12.193-3.197-.665-2.522-1.043-4.14-3.639-4.265-3.805-.125-.168-1.02-1.353-1.02-2.583 0-1.23.636-1.838.868-2.073.232-.236.505-.295.674-.295.168 0 .338-.002.482 0 .152.002.355-.057.545.405.19.462.653 1.587.712 1.705.059.117.098.254.015.42-.085.169-.126.276-.253.424-.127.148-.266.332-.38.441-.126.118-.265.247-.123.493.143.245.637 1.05 1.365 1.693.942.83 1.733 1.082 1.986 1.2.253.118.4.098.547-.074.148-.172.637-.743.805-1.001.17-.258.339-.214.572-.128.232.086 1.472.693 1.725.819.253.125.422.19.484.296.064.105.064.615-.18 1.3z" />
+        </svg>
+        <span>Grupo VIP</span>
+    </a>
+    </div>
+
+</body>
+
+</html>
