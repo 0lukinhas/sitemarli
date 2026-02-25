@@ -39,7 +39,8 @@ def run(cmd, cwd=None, capture=True):
         cmd, shell=True, cwd=cwd,
         capture_output=capture, text=True
     )
-    return result.stdout.strip(), result.returncode
+    stdout = result.stdout.strip() if result.stdout else ""
+    return stdout, result.returncode
 
 
 def is_git_repo(path):
@@ -56,10 +57,10 @@ def get_changed_files(path):
     """Retorna lista de arquivos alterados (staged + unstaged + untracked)."""
     out, _ = run("git status --porcelain", cwd=path)
     files = []
-    for line in out.splitlines():
-        if len(line) >= 3:
-            status = line[:2].strip()
-            fname  = line[3:].strip().split(" -> ")[-1]  # renomear → pegar destino
+    for git_line in out.splitlines():
+        if len(git_line) >= 3:
+            status = git_line[0:2].strip()
+            fname  = git_line[3:].strip().split(" -> ")[-1]  # renomear → pegar destino
             files.append((status, fname))
     return files
 
