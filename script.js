@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const revealItems = document.querySelectorAll(
         '.t-card, .testimonial-card, .gallery-card, ' +
         '.science-text h2, .science-text p, .science-text .link-arrow, ' +
-        '.science-image, .mentorship-text h2, .mentorship-text p, ' +
+        '.science-image, .mentorship-text h2, .mentorship-text p, .mentorship-list li, .mentorship-cta, .mentorship-image, ' +
         '.differentials-header h2'
     );
 
