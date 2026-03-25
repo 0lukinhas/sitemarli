@@ -19,6 +19,9 @@
     <link rel="icon" type="image/webp" href="LOGO-MARLI-SEM-FUNDO.webp">
     <link rel="apple-touch-icon" href="LOGO-MARLI-SEM-FUNDO.webp">
 
+    <!-- Preload hero image for faster LCP -->
+    <link rel="preload" as="image" fetchpriority="high" href="Marli-Hero.webp">
+
     <!-- Google Fonts (inspired by faceformula.com pairing) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,7 +104,7 @@
                         </svg></a>
                 </div>
                 <div class="science-image">
-                    <img src="Marli-Hero.webp" alt="Dra. Marli Rosignol em Atendimento">
+                    <img src="Marli-Hero.webp" alt="Dra. Marli Rosignol em Atendimento" fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -136,7 +139,7 @@
                 <div class="t-card">
                     <div class="t-image">
                         <img src="https://accurate-clone-engine.lovable.app/assets/treatment-facial-CLMzMFmm.jpg"
-                            alt="Botox e Preenchimentos">
+                            alt="Botox e Preenchimentos" loading="lazy">
                     </div>
                     <div class="t-content">
                         <h3>Toxina Botulínica (Botox)</h3>
@@ -454,6 +457,23 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Modal Grupo VIP -->
+    <div class="promo-modal" id="promoModal" role="dialog" aria-modal="true" aria-labelledby="promoTitle">
+        <div class="promo-modal-box">
+            <button class="promo-close" aria-label="Fechar">&times;</button>
+            <div class="promo-modal-badge">✨ Exclusivo</div>
+            <h3 id="promoTitle">Entre para o Grupo VIP</h3>
+            <p>Receba <strong>ofertas exclusivas</strong>, novidades sobre tratamentos e conteúdos especiais diretamente no seu WhatsApp.</p>
+            <ul class="promo-modal-benefits">
+                <li>🎁 Promoções exclusivas para membros</li>
+                <li>📲 Conteúdo educativo sobre estética</li>
+                <li>⚡ Vagas antecipadas em novos tratamentos</li>
+            </ul>
+            <a href="https://chat.whatsapp.com/KwimP4xDtw395QIJT43Uxz" target="_blank" class="promo-modal-btn">Quero entrar no Grupo VIP</a>
+            <button class="promo-modal-decline" id="btnDeclinePromo">Agora não, obrigada</button>
+        </div>
+    </div>
 
     <a href="https://chat.whatsapp.com/KwimP4xDtw395QIJT43Uxz" target="_blank" class="floating-vip"
         aria-label="Grupo VIP WhatsApp">

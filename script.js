@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const declineBtn = document.getElementById('btnDeclinePromo');
 
     if (modal) {
-        setTimeout(() => { modal.classList.add('active'); }, 3000);
+        setTimeout(() => { modal.classList.add('active'); }, 5000);
         const closeModal = () => modal.classList.remove('active');
         if (closeBtn) closeBtn.addEventListener('click', closeModal);
         if (declineBtn) declineBtn.addEventListener('click', closeModal);
