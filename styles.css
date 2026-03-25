@@ -931,6 +931,20 @@ p {
   background-color: var(--color-bg-light);
 }
 
+.mentorship-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.mentorship-cta {
+  margin-top: 1rem;
+}
+
 .mentorship-container {
   display: flex;
   gap: 8%;
