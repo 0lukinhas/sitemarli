@@ -1,0 +1,33 @@
+# robots.txt — Dra. Marli Rosignol | dramarlirosignol.com.br
+# Última atualização: 2026-06-30
+
+# Todos os crawlers — permitir tudo
+User-agent: *
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# IA — ChatGPT / OpenAI (permitir para citações em IA)
+User-agent: GPTBot
+Allow: /
+
+# IA — Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# IA — Claude / Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# IA — Gemini / Google
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://dramarlirosignol.com.br/sitemap.xml
